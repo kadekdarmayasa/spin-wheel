@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body {
+	height: 100vh;
+	background-image: linear-gradient(135deg, #acb6e5 10%, #86fde8 100%);
+}
+.wrapper {
+	display: none;
+	width: 90%;
+	max-width: 34.37em;
+	max-height: 90vh;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(8px);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	padding: 3em;
+	border-radius: 1em;
+	box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#wheel {
+	max-height: inherit;
+	width: inherit;
+	top: 0;
+	padding: 0;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+#spin-btn {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	height: 26%;
+	width: 26%;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 0;
+	/* background: radial-gradient(#fdcf3b 50%, #d88a40 85%); */
+	background: #38a3a5;
+	box-shadow: 0 0 5px white;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+}
+.container i {
+	position: absolute;
+	color: #38a3a5;
+	font-size: 2rem;
+	top: 45%;
+	right: -8%;
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		font-size: 12px;
+	}
+
+	.container i {
+		right: -10%;
+	}
+}

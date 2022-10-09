@@ -1,0 +1,14 @@
+{
+	"name": "spin-wheel-using",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chart.js": "^3.9.1",
+		"chartjs-plugin-datalabels": "^2.1.0",
+		"sweetalert2": "^11.4.38"
+	}
+}
