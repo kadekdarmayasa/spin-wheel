@@ -5,7 +5,6 @@ const main = () => {
 	const spinBtn = document.getElementById('spin-btn');
 
 	//Object that stores values of minimum and maximum angle for a value
-	console.log(questions);
 	const rotationValues = [
 		{ minDegree: 0, maxDegree: 90, value: 'Opsi A', questions: questions.opsiA },
 		{ minDegree: 90, maxDegree: 180, value: 'Opsi D', questions: questions.opsiB },
