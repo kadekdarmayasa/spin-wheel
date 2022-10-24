@@ -4,35 +4,58 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spin Wheel App</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles/style.css" />
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a53653dcab.js" crossorigin="anonymous"></script>
   <!-- Sweetalert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.18/dist/sweetalert2.all.min.js"></script>
+  <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
+  <!-- Wrapper  -->
   <div class="wrapper">
     <div class="container">
       <canvas id="wheel"></canvas>
-      <button id="spin-btn">Spin</button>
+      <button id="spin-btn">SPIN</button>
       <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-outline-primary d-none" id="opt-btn" data-bs-toggle="modal"
+        data-bs-target="#exampleModal"></button>
     </div>
   </div>
 
+  <!-- How To Play Button  -->
+  <button type="button" class="d-none btn bg-white border-0 px-3 py-2 m-2 rounded-3" id="rule-btn"
+    data-bs-target="#exampleModal" data-bs-toggle="modal">
+    <i class="fa-solid fa-gear me-2"></i> Cara Bermain
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Chart JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
-    integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./node_modules/chart.js/dist/chart.min.js"></script>
   <!-- Chart JS Plugin for displaying text over chart -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"
-    integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
   <!-- Script -->
-  <script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/script.js" type="module"></script>
 </body>
 
 </html>

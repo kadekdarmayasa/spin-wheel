@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 body {
 	height: 100vh;
 	background-image: linear-gradient(135deg, #acb6e5 10%, #86fde8 100%);
@@ -14,7 +15,7 @@ body {
 	display: none;
 	width: 90%;
 	max-width: 34.37em;
-	max-height: 90vh;
+	max-height: 100%;
 	background-color: rgba(255, 255, 255, 0.6);
 	backdrop-filter: blur(8px);
 	position: absolute;
@@ -51,7 +52,6 @@ body {
 	border-radius: 50%;
 	cursor: pointer;
 	border: 0;
-	/* background: radial-gradient(#fdcf3b 50%, #d88a40 85%); */
 	background: #38a3a5;
 	box-shadow: 0 0 5px white;
 	color: white;
@@ -66,6 +66,16 @@ body {
 	font-size: 2rem;
 	top: 45%;
 	right: -8%;
+}
+
+#opt-btn,
+#paket-btn {
+	position: relative;
+	top: 20px;
+	width: 150px;
+	height: 50px;
+	/* margin: auto; */
+	display: block;
 }
 
 @media screen and (max-width: 768px) {
